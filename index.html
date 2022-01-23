@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+
+  <title>Lightbox</title>
+</head>
+
+<body>
+  <article class="wrapper">
+    <!-- navigation -->
+    <div class="flex-nav">
+      <ul>
+        <li>
+          <a href="index.html"><img src="images/home.png" alt="index" /></a>
+        </li>
+        <li>
+          <a href="work.html"><img src="images/work.png" alt="work" /></a>
+        </li>
+        <li>
+          <a href="about.html"><img src="images/about.png" alt="about" /></a>
+        </li>
+        <li>
+          <a href="contact.html"
+            ><img src="images/contact.png" alt="contact"
+          /></a>
+        </li>
+      </ul>
+    </div>
+
+    <header>
+      <img id="box" src="images/box.png" alt="box" />
+      <img id="logo" src="images/logo.png" alt="logo" />
+    </header>
+
+    <div class="description">
+      Hi, we are LightBox, a completely made up design agency that specializes
+      in fresh, clean web design and graphics.
+      <br />
+      <a href="contact.html">Find out more</a>
+    </div>
+
+    <!-- what we do part -->
+
+    <div class="whatwedo">
+      <h2 class="what">What we do</h2>
+
+      <div class="line"></div>
+
+      <p>
+        <img src="images/webdev.png" alt="webdev" /><span class="text-color"
+          >Web Development
+        </span>
+      </p>
+      <p class="abstract">
+        Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor
+        sit ametLorem
+      </p>
+
+      <p>
+        <img src="images/graphics.png" alt="graphics" /><span class="text-color"
+          >Graphics
+        </span>
+      </p>
+      <p class="abstract">
+        Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor
+        sit amet
+      </p>
+
+      <p>
+        <img src="images/ud.png" alt="ud" /><span class="text-color"
+          >Usability Design
+        </span>
+      </p>
+      <p class="abstract">
+        Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor
+        sit amet
+      </p>
+    </div>
+
+    <!-- callout box part -->
+    <aside>
+      <div class="bubble">
+        Lightbox did an amazing job with our website. From start to finish they
+        were professional , fast and totally fictitious.
+        <br />
+        <br />
+        It was amazing how a company that doesn't even exist could put together
+        such an amazing site for us. Thank you Lightbox!
+      </div>
+      <br />
+      <br />
+
+      <div class="name">
+        <p class="john">John Rushmore</p>
+        <p class="up">madeuppeople.com</p>
+      </div>
+    </aside>
+
+    <div class="line"></div>
+
+    <!-- recent work part -->
+
+    <section class="recent">
+      <h2 class="what">Recent Work</h2>
+
+      <div class="numbers">
+        <a onclick="imageChange(this)" href="#recent-work-slide"
+          ><img class="hide" src="images/recentWork1.jpg" alt="" />1
+        </a>
+
+        <a onclick="imageChange(this)" href="#recent-work-slide"
+          ><img class="hide" src="images/recentWork2.jpg" alt="" />2
+        </a>
+        <a onclick="imageChange(this)" href="#recent-work-slide"
+          ><img class="hide" src="images/recentWork3.jpg" alt="" />3
+        </a>
+        <a onclick="imageChange(this)" href="#recent-work-slide"
+          ><img class="hide" src="images/recentWork4.jpg" alt="" />4
+        </a>
+      </div>
+
+      <div id="recent-work-slide">
+        <img src="images/recentWork1.jpg" alt="" />
+      </div>
+      <p>
+        <em
+          ><strong>Web Design Week Layout:</strong> A design layout I created
+          for Psdtuts+</em
+        >
+      </p>
+    </section>
+
+    <!-- footer part -->
+    <footer>
+      <div class="footer-logo">
+        <img src="images/footerLogo.png" alt="footerLogo" />
+      </div>
+
+      <div class="up">
+        <p>font via <span class="white">dafont (duepuntozero)</span></p>
+        <p>icons by <span class="white">iconeden</span></p>
+      </div>
+
+      <div>
+        <p class="right footer-right">
+          copyright (c)2009<span class="white"> rockablepress</span>
+        </p>
+      </div>
+    </footer>
+  </article>
+  <script>
+    function imageChange(e) {
+      document.getElementById("recent-work-slide").children[0].src =
+        e.children[0].src;
+    }
+  </script>
+  <!-- <script src="assets/js/jquery-3.6.0.js"></script> -->
+</body>

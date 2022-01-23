@@ -1,0 +1,288 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  padding: 10px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+/*Home starts*/
+
+body {
+  background-image: url(images/bg.jpg);
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+.wrapper {
+  max-width: 1280px;
+  margin: -8px auto;
+  padding: 30px;
+  background-image: url(images/center-bg.jpg);
+  background-size: contain;
+  display: grid;
+  grid-template-columns: 270px auto auto;
+}
+.flex-nav {
+  grid-column: 3 / 4;
+}
+.flex-nav ul {
+  display: grid;
+  list-style: none;
+  margin: -30px auto;
+  padding: 0;
+
+  grid-template-columns: repeat(4, 70px);
+  justify-self: end;
+}
+header {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.description {
+  max-width: 350px;
+  color: #a68a7d;
+  text-align: justify;
+  font-size: 13px;
+  font-family: Helvetica, sans-serif;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  align-self: center;
+  margin-top: 40px;
+}
+
+#logo {
+  width: 80px;
+  height: 43px;
+  margin: 0 10px 70px 0;
+}
+
+.flex-nav img {
+  height: 50px;
+}
+.description a {
+  color: white;
+  text-decoration: none;
+}
+/* what we do part  */
+.what {
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  margin: 5px auto;
+}
+.whatwedo p {
+  max-width: 50%;
+  line-height: 1.5;
+}
+.whatwedo {
+  grid-column: 2/3;
+}
+.whatwedo img {
+  width: 24px;
+  height: 20px;
+}
+/* callout part */
+aside {
+  display: grid;
+}
+.bubble {
+  position: relative;
+  width: 252px;
+  background: #ebe7e4;
+  color: #7f6357;
+  font-size: 1.3rem;
+  padding: 20px;
+}
+.bubble:after {
+  content: "\0020";
+  display: block;
+  position: absolute;
+  bottom: -3rem;
+  right: 2rem;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border: solid 25px transparent;
+  border-left: 0;
+  border-bottom-color: #ebe7e4;
+  transform: rotate(180deg);
+}
+.john {
+  line-height: 15px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.name {
+  margin-left: 5rem;
+  justify-self: start;
+}
+.line {
+  max-width: 900px;
+  height: 4px;
+  border-bottom: 1px solid black;
+  grid-column: 2/4;
+}
+/* recent work part */
+.recent {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+.recent p {
+  align-self: end;
+}
+.hide {
+  display: none;
+}
+.numbers > a {
+  display: inline;
+}
+.text-color {
+  color: #745459;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.whatwedo p {
+  margin: 2px;
+}
+
+.whatwedo img {
+  margin-right: 5px;
+}
+
+.home-body ul {
+  list-style-type: none;
+}
+
+.recent li {
+  display: inline;
+  cursor: pointer;
+}
+.recent ol li a {
+  text-decoration: none;
+  color: white;
+  background: #6c535a;
+  padding: 2px 10px;
+}
+
+.recent img {
+  border: 5px solid white;
+}
+.recent p {
+  margin: 0;
+  font-size: 12px;
+}
+.up {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+  color: #a68a7d;
+  margin: 0;
+}
+.right {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+  color: #a68a7d;
+}
+
+footer {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+}
+
+footer .up p {
+  margin: 0;
+}
+
+/*Home ends ==============*/
+
+/*Work starts*/
+.work {
+  margin: -20px 20px 0 200px;
+}
+.work-text {
+  color: #2f231e;
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  margin: 18px 0 0 0;
+}
+.work h3 {
+  width: 200px;
+  margin: 7px 0;
+}
+.work ol {
+  margin: -30px -60px 0 0px;
+  padding: 0;
+}
+.work p {
+  margin: 5px auto;
+}
+.screenshot {
+  width: 500px;
+  height: 90px;
+  background: #d2c9c4;
+  border: 5px solid white;
+  margin: 0px 0 5px 0;
+}
+.screenshot p {
+  padding: 30px 200px;
+  font-size: 12px;
+}
+
+/*Work ends=============================================================*/
+/*About starts*/
+.about {
+  width: 60%;
+  margin: 0 auto;
+}
+.about ul {
+  margin-bottom: 50px;
+}
+
+/*About ends=====================================================*/
+/*contact start*/
+.form {
+  margin-top: 10px;
+  margin-bottom: 75px;
+}
+
+form li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+form ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+textarea {
+  width: 300px;
+  height: 50px;
+}
+#errorMessage {
+  font-size: 1.5em;
+  color: #f00;
+}
+.output {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+/*contact end*/
